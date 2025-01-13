@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="grid grid-cols-12">
+    <div
+      class="side border-2 col-span-3 gap-4 bg-pink-300 text-center justify-center content-center min-h-screen"
+      id="abc"
+    >
+      <h2 class="sm:text-5xl text-xl z-20 m-7px" style="font-family: cursive">
+        To-Do
+      </h2>
+      <h2 style="font-family: serif" class="sm:text-9xl z-20 m-2">List</h2>
+      <img
+        src="https://www.svgrepo.com/show/530624/coconut-tree.svg"
+        class="min-w-screen -z-10 flex content-end items-end"
+        alt="Coconut Tree"
+      />
+    </div>
+    <div
+      class="main border-2 col-span-9 bg-[#FFEBD4] min-h-screen justify-center content-center"
+    >
+      <div
+        class="bg-[#FFC6C6] rounded-lg m-5 justify-center text-center shadow-2xl"
+      >
+        <h2 class="font-black sm:text-5xl">To-do List</h2>
+        <input
+          type="text"
+          class="text sm:p-2 m-4 text-pink-800 font-bold rounded-md"
+          placeholder="Add your Task"
+          id="task-input"
+        />
+        <button
+          class="add bg-[#FFEBD4] p-2 m-4 rounded-md font-semibold shadow-2xl"
+          id="add-task-button"
+        >
+          Add
+        </button>
+        <ul
+          id="task-list"
+          class="list-none text-center text-black font-serif text-xl"
+        ></ul>
+      </div>
+    </div>
+    <script src="tdl.js"></script>
+  </body>
+</html>
